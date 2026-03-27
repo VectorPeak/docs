@@ -48,21 +48,21 @@
         ]
       },
       {
-        "tab": "深度学习入门",
+        "tab": "深度学习",
         "groups": [
           {
             "group": "介绍",
             "pages": [
-              "深度学习入门/introduction"
+              "深度学习/introduction"
             ]
           },
           {
             "group": "接口示例",
             "pages": [
-              "深度学习入门/endpoint/get",
-              "深度学习入门/endpoint/create",
-              "深度学习入门/endpoint/delete",
-              "深度学习入门/endpoint/webhook"
+              "深度学习/endpoint/get",
+              "深度学习/endpoint/create",
+              "深度学习/endpoint/delete",
+              "深度学习/endpoint/webhook"
             ]
           }
         ]
