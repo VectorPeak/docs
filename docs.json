@@ -48,21 +48,21 @@
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "深度学习入门",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "介绍",
             "pages": [
-              "api-reference/introduction"
+              "深度学习入门/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "接口示例",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "深度学习入门/endpoint/get",
+              "深度学习入门/endpoint/create",
+              "深度学习入门/endpoint/delete",
+              "深度学习入门/endpoint/webhook"
             ]
           }
         ]
