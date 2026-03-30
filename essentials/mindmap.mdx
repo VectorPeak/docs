@@ -1,61 +1,90 @@
 ---
 title: "Mind map"
-description: "Render a simple mind map with Mermaid"
+description: "Render a polished knowledge map with Mermaid"
 icon: "diagram-project"
 ---
 
 ## Mind map demo
 
-Use a Mermaid `mindmap` block when you want the lightest possible way to embed a knowledge map in a page.
+This version keeps the Mermaid workflow, but uses a styled `flowchart` instead of the default `mindmap` layout. That gives you better control over spacing, color, and visual hierarchy while staying lightweight.
 
-```mermaid
-mindmap
-  root((Deep Learning))
-    Foundations
-      Linear Algebra
-      Probability
-      Calculus
-    Core Models
-      CNN
-      RNN
-      Transformer
-    Training
-      Optimizers
-      Regularization
-      Evaluation
-    Applications
-      Vision
-      NLP
-      Recommendation
+```mermaid actions={false}
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "background": "#0b0f0d",
+    "primaryColor": "#0f172a",
+    "primaryTextColor": "#e5f7ee",
+    "primaryBorderColor": "#34d399",
+    "lineColor": "#5eead4",
+    "tertiaryColor": "#111827",
+    "fontFamily": "ui-sans-serif, system-ui, sans-serif"
+  },
+  "flowchart": {
+    "defaultRenderer": "elk",
+    "curve": "basis",
+    "nodeSpacing": 36,
+    "rankSpacing": 68,
+    "padding": 12
+  }
+}}%%
+flowchart LR
+    DL["Deep Learning"]
+
+    DL --> F["Foundations"]
+    DL --> M["Core models"]
+    DL --> T["Training"]
+    DL --> A["Applications"]
+
+    F --> F1["Linear algebra"]
+    F --> F2["Probability"]
+    F --> F3["Calculus"]
+
+    M --> M1["CNN"]
+    M --> M2["RNN"]
+    M --> M3["Transformer"]
+
+    T --> T1["Optimizers"]
+    T --> T2["Regularization"]
+    T --> T3["Evaluation"]
+
+    A --> A1["Vision"]
+    A --> A2["NLP"]
+    A --> A3["Recommendation"]
+
+    classDef root fill:#16a34a,color:#052e16,stroke:#bbf7d0,stroke-width:3px,font-weight:bold;
+    classDef section fill:#0f2a22,color:#ecfdf5,stroke:#34d399,stroke-width:2px;
+    classDef leaf fill:#111827,color:#e5e7eb,stroke:#475569,stroke-width:1.5px;
+
+    class DL root;
+    class F,M,T,A section;
+    class F1,F2,F3,M1,M2,M3,T1,T2,T3,A1,A2,A3 leaf;
 ```
 
-## Why this is the minimum viable approach
+## Why this looks better
 
-- No extra npm packages
-- No custom React component
-- Easy to maintain because the content stays as text
-- Works well for static concept maps in docs or blog posts
+- Uses a stronger visual hierarchy than Mermaid's default `mindmap`
+- Matches the dark green tone of the current site
+- Removes the extra floating controls for a cleaner embedded look
+- Keeps the source fully text-based and easy to maintain
 
 ## Usage
 
 ````mdx
-```mermaid
-mindmap
-  root((Deep Learning))
-    Foundations
-      Linear Algebra
-      Probability
-    Core Models
-      CNN
-      Transformer
+```mermaid actions={false}
+%%{init: {
+  "theme": "base",
+  "flowchart": { "defaultRenderer": "elk" }
+}}%%
+flowchart LR
+    DL["Deep Learning"]
+    DL --> F["Foundations"]
+    DL --> M["Core models"]
+    F --> F1["Linear algebra"]
+    M --> M1["Transformer"]
 ```
 ````
 
-## When to upgrade from this
+## Practical limit
 
-Move beyond Mermaid if you need:
-
-- custom node design
-- click interactions
-- expand or collapse behavior
-- richer layout control
+This is close to the visual ceiling of Mermaid inside a docs page. If you need custom node cards, richer branding, or interaction beyond static zoom and pan, Mermaid stops being the right tool and you should move to a real client-side component.
