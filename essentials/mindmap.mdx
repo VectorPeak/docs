@@ -29,32 +29,32 @@ This version keeps the Mermaid workflow, but uses a styled `flowchart` instead o
   }
 }}%%
 flowchart LR
-    DL["Deep Learning"]
+    DL(["Deep Learning"])
 
-    DL --> F["Foundations"]
-    DL --> M["Core models"]
-    DL --> T["Training"]
-    DL --> A["Applications"]
+    DL --> F(["Foundations"])
+    DL --> M(["Core models"])
+    DL --> T(["Training"])
+    DL --> A(["Applications"])
 
-    F --> F1["Linear algebra"]
-    F --> F2["Probability"]
-    F --> F3["Calculus"]
+    F --> F1(["Linear algebra"])
+    F --> F2(["Probability"])
+    F --> F3(["Calculus"])
 
-    M --> M1["CNN"]
-    M --> M2["RNN"]
-    M --> M3["Transformer"]
+    M --> M1(["CNN"])
+    M --> M2(["RNN"])
+    M --> M3(["Transformer"])
 
-    T --> T1["Optimizers"]
-    T --> T2["Regularization"]
-    T --> T3["Evaluation"]
+    T --> T1(["Optimizers"])
+    T --> T2(["Regularization"])
+    T --> T3(["Evaluation"])
 
-    A --> A1["Vision"]
-    A --> A2["NLP"]
-    A --> A3["Recommendation"]
+    A --> A1(["Vision"])
+    A --> A2(["NLP"])
+    A --> A3(["Recommendation"])
 
-    classDef root fill:#16a34a,color:#052e16,stroke:#bbf7d0,stroke-width:3px,font-weight:bold;
-    classDef section fill:#0f2a22,color:#ecfdf5,stroke:#34d399,stroke-width:2px;
-    classDef leaf fill:#111827,color:#e5e7eb,stroke:#475569,stroke-width:1.5px;
+    classDef root fill:#16a34a,color:#052e16,stroke:#bbf7d0,stroke-width:3px,font-weight:bold,rx:18,ry:18;
+    classDef section fill:#0f2a22,color:#ecfdf5,stroke:#34d399,stroke-width:2px,rx:16,ry:16;
+    classDef leaf fill:#111827,color:#e5e7eb,stroke:#475569,stroke-width:1.5px,rx:14,ry:14;
 
     class DL root;
     class F,M,T,A section;
@@ -77,11 +77,11 @@ flowchart LR
   "flowchart": { "defaultRenderer": "elk" }
 }}%%
 flowchart LR
-    DL["Deep Learning"]
-    DL --> F["Foundations"]
-    DL --> M["Core models"]
-    F --> F1["Linear algebra"]
-    M --> M1["Transformer"]
+    DL(["Deep Learning"])
+    DL --> F(["Foundations"])
+    DL --> M(["Core models"])
+    F --> F1(["Linear algebra"])
+    M --> M1(["Transformer"])
 ```
 ````
 
