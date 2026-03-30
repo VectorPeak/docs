@@ -1,0 +1,61 @@
+---
+title: "Mind map"
+description: "Render a simple mind map with Mermaid"
+icon: "diagram-project"
+---
+
+## Mind map demo
+
+Use a Mermaid `mindmap` block when you want the lightest possible way to embed a knowledge map in a page.
+
+```mermaid
+mindmap
+  root((Deep Learning))
+    Foundations
+      Linear Algebra
+      Probability
+      Calculus
+    Core Models
+      CNN
+      RNN
+      Transformer
+    Training
+      Optimizers
+      Regularization
+      Evaluation
+    Applications
+      Vision
+      NLP
+      Recommendation
+```
+
+## Why this is the minimum viable approach
+
+- No extra npm packages
+- No custom React component
+- Easy to maintain because the content stays as text
+- Works well for static concept maps in docs or blog posts
+
+## Usage
+
+````mdx
+```mermaid
+mindmap
+  root((Deep Learning))
+    Foundations
+      Linear Algebra
+      Probability
+    Core Models
+      CNN
+      Transformer
+```
+````
+
+## When to upgrade from this
+
+Move beyond Mermaid if you need:
+
+- custom node design
+- click interactions
+- expand or collapse behavior
+- richer layout control

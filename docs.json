@@ -34,6 +34,7 @@
               "essentials/markdown",
               "essentials/code",
               "essentials/images",
+              "essentials/mindmap",
               "essentials/reusable-snippets"
             ]
           },
