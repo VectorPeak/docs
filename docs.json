@@ -75,6 +75,54 @@
             "pages": [
               "LeetCode/mindmap"
             ]
+          },
+          {
+            "group": "数组",
+            "pages": [
+              "LeetCode/array/array-theory"
+            ]
+          },
+          {
+            "group": "链表",
+            "pages": [
+              "LeetCode/linked-list/linked-list-theory"
+            ]
+          },
+          {
+            "group": "回溯算法",
+            "pages": [
+              "LeetCode/backtracking/backtracking-theory"
+            ]
+          },
+          {
+            "group": "贪心算法",
+            "pages": [
+              "LeetCode/greedy/greedy-theory"
+            ]
+          },
+          {
+            "group": "动态规划",
+            "pages": [
+              "LeetCode/dynamic-programming/dynamic-programming-theory"
+            ]
+          },
+          {
+            "group": "图论",
+            "pages": [
+              "LeetCode/graph/graph-theory"
+            ]
+          },
+          {
+            "group": "栈与队列",
+            "pages": [
+              "LeetCode/stack-queue/stack-queue-theory"
+            ]
+          },
+          {
+            "group": "二叉树",
+            "pages": [
+              "LeetCode/binary-tree/binary-tree-theory"
+            ]
           }
         ]
       }
