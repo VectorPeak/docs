@@ -9,6 +9,7 @@
 - This is a documentation site built on [Mintlify](https://mintlify.com)
 - Pages are MDX files with YAML frontmatter
 - Configuration lives in `docs.json`
+- Use `https://mintlify.com/docs` as the primary reference for Mintlify and MDX writing syntax in this project
 - Run `mint dev` to preview locally
 - Run `mint broken-links` to check links
 
