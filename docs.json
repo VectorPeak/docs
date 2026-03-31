@@ -51,13 +51,13 @@
         "tab": "DeepLearning",
         "groups": [
           {
-            "group": "介绍",
+            "group": "Introduction",
             "pages": [
               "DeepLearning/introduction"
             ]
           },
           {
-            "group": "接口示例",
+            "group": "API examples",
             "pages": [
               "DeepLearning/endpoint/get",
               "DeepLearning/endpoint/create",
@@ -68,10 +68,10 @@
         ]
       },
       {
-        "tab": "Algorithm_4LeetCode",
+        "tab": "LeetCode",
         "groups": [
           {
-            "group": "路线图",
+            "group": "Roadmap",
             "pages": [
               "LeetCode/mindmap"
             ]
