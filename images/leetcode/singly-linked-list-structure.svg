@@ -44,9 +44,9 @@
   <g>
     <rect class="panel" x="160" y="72" width="140" height="76" rx="18" stroke-width="1.5"/>
     <line class="divider" x1="252" y1="72" x2="252" y2="148" stroke-width="1.5"/>
-    <text class="muted" x="186" y="95">data</text>
-    <text class="muted" x="263" y="95">next</text>
-    <text class="value" x="196" y="121">A</text>
+    <text class="muted" x="206" y="95" text-anchor="middle">data</text>
+    <text class="muted" x="276" y="95" text-anchor="middle">next</text>
+    <text class="value" x="206" y="125" text-anchor="middle">A</text>
     <circle class="pointer" cx="276" cy="110" r="7"/>
   </g>
 
@@ -56,9 +56,9 @@
   <g>
     <rect class="panel" x="344" y="72" width="140" height="76" rx="18" stroke-width="1.5"/>
     <line class="divider" x1="436" y1="72" x2="436" y2="148" stroke-width="1.5"/>
-    <text class="muted" x="380" y="95">data</text>
-    <text class="muted" x="447" y="95">next</text>
-    <text class="value" x="380" y="121">C</text>
+    <text class="muted" x="390" y="95" text-anchor="middle">data</text>
+    <text class="muted" x="460" y="95" text-anchor="middle">next</text>
+    <text class="value" x="390" y="125" text-anchor="middle">C</text>
     <circle class="pointer" cx="460" cy="110" r="7"/>
   </g>
 
@@ -68,9 +68,9 @@
   <g>
     <rect class="panel" x="528" y="72" width="140" height="76" rx="18" stroke-width="1.5"/>
     <line class="divider" x1="620" y1="72" x2="620" y2="148" stroke-width="1.5"/>
-    <text class="muted" x="564" y="95">data</text>
-    <text class="muted" x="631" y="95">next</text>
-    <text class="value" x="564" y="121">D</text>
+    <text class="muted" x="574" y="95" text-anchor="middle">data</text>
+    <text class="muted" x="644" y="95" text-anchor="middle">next</text>
+    <text class="value" x="574" y="125" text-anchor="middle">D</text>
     <circle class="pointer" cx="644" cy="110" r="7"/>
   </g>
 
@@ -80,9 +80,9 @@
   <g>
     <rect class="panel" x="712" y="72" width="140" height="76" rx="18" stroke-width="1.5"/>
     <line class="divider" x1="804" y1="72" x2="804" y2="148" stroke-width="1.5"/>
-    <text class="muted" x="748" y="95">data</text>
-    <text class="muted" x="815" y="95">next</text>
-    <text class="value" x="748" y="121">E</text>
+    <text class="muted" x="758" y="95" text-anchor="middle">data</text>
+    <text class="muted" x="828" y="95" text-anchor="middle">next</text>
+    <text class="value" x="758" y="125" text-anchor="middle">E</text>
     <circle class="pointer" cx="828" cy="110" r="7"/>
   </g>
 
@@ -91,9 +91,9 @@
   <rect class="danger" x="886" y="92" width="52" height="36" rx="18" stroke-width="1.5"/>
   <text class="danger-text" x="912" y="114" text-anchor="middle">null</text>
 
-  <text class="label" x="36" y="188">节点组成</text>
+  <text class="label" x="36" y="180" dominant-baseline="middle">节点组成</text>
   <rect class="panel" x="126" y="164" width="88" height="32" rx="16" stroke-width="1.2"/>
-  <text class="chip-text" x="170" y="184" text-anchor="middle">数据域</text>
+  <text class="chip-text" x="170" y="180" text-anchor="middle" dominant-baseline="middle">数据域</text>
   <circle class="legend-dot" cx="250" cy="180" r="6"/>
-  <text class="chip-text" x="272" y="185">next 指针</text>
+  <text class="chip-text" x="272" y="180" dominant-baseline="middle">next 指针</text>
 </svg>
