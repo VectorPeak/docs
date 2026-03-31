@@ -27,6 +27,8 @@ icon: "link"
 
 单链表最常见，双链表多一个 `prev` 指针，循环链表的尾节点会重新指回头节点。
 
+下面的代码以单链表为例：
+
 ```python
 class ListNode:
     def __init__(self, val: int = 0, next: "ListNode | None" = None):
@@ -156,6 +158,8 @@ def insert_after(prev: ListNode, val: int) -> None:
 
 链表不能像数组那样通过下标随机访问，只能从头开始遍历。
 
+下面这个示例里，`k` 从 `0` 开始计数。
+
 ```python
 def get_kth_node(head: ListNode | None, k: int) -> ListNode | None:
     cur = head
@@ -174,7 +178,7 @@ def get_kth_node(head: ListNode | None, k: int) -> ListNode | None:
 | --- | --- | --- |
 | 随机访问 | `O(1)` | `O(n)` |
 | 头部插入 | `O(n)` | `O(1)` |
-| 已知前驱时删除 | `O(n)` | `O(1)` |
+| 已知位置时删除 | `O(n)` | `O(1)` |
 
 ## 快慢指针
 
