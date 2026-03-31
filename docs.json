@@ -48,7 +48,7 @@
         ]
       },
       {
-        "tab": "深度学习",
+        "tab": "DeepLearning",
         "groups": [
           {
             "group": "介绍",
@@ -68,7 +68,7 @@
         ]
       },
       {
-        "tab": "数据结构与算法",
+        "tab": "Algorithm_4LeetCode",
         "groups": [
           {
             "group": "路线图",
