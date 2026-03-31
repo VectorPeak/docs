@@ -53,16 +53,16 @@
           {
             "group": "介绍",
             "pages": [
-              "深度学习/introduction"
+              "DeepLearning/introduction"
             ]
           },
           {
             "group": "接口示例",
             "pages": [
-              "深度学习/endpoint/get",
-              "深度学习/endpoint/create",
-              "深度学习/endpoint/delete",
-              "深度学习/endpoint/webhook"
+              "DeepLearning/endpoint/get",
+              "DeepLearning/endpoint/create",
+              "DeepLearning/endpoint/delete",
+              "DeepLearning/endpoint/webhook"
             ]
           }
         ]
