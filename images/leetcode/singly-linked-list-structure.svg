@@ -91,9 +91,9 @@
   <rect class="danger" x="886" y="92" width="52" height="36" rx="18" stroke-width="1.5"/>
   <text class="danger-text" x="912" y="114" text-anchor="middle">null</text>
 
-  <text class="label" x="36" y="180" dominant-baseline="middle">节点组成</text>
-  <rect class="panel" x="126" y="164" width="88" height="32" rx="16" stroke-width="1.2"/>
-  <text class="chip-text" x="170" y="180" text-anchor="middle" dominant-baseline="middle">数据域</text>
-  <circle class="legend-dot" cx="250" cy="180" r="6"/>
-  <text class="chip-text" x="272" y="180" dominant-baseline="middle">next 指针</text>
+  <text class="chip-text" x="100" y="180" text-anchor="middle" dominant-baseline="middle">节点组成</text>
+  <rect class="panel" x="180" y="164" width="88" height="32" rx="16" stroke-width="1.2"/>
+  <text class="chip-text" x="224" y="180" text-anchor="middle" dominant-baseline="middle">数据域</text>
+  <circle class="legend-dot" cx="304" cy="180" r="6"/>
+  <text class="chip-text" x="328" y="180" dominant-baseline="middle">next 指针</text>
 </svg>
