@@ -18,6 +18,7 @@
 {/* Example: Use "workspace" not "project", "member" not "user" */}
 
 - `temp` means the local branch `temporary_storage`
+- Default to decoding project text files as `UTF-8` before considering other encodings
 
 ## Style preferences
 

@@ -1,55 +1,84 @@
-# Mintlify Starter Kit
+# VectorPeak
 
-Use the starter kit to get your docs deployed and ready to customize.
+## 关于这个站点
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+VectorPeak 是我的个人博客和知识站点。
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+这里主要记录三类内容：
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+- 我的随想、笔记和阶段性思考
+- LeetCode 算法学习、题解整理和路线图
+- DeepLearning 相关的学习记录、实验和实践
 
-## AI-assisted writing
+我希望这个仓库不是一个普通的文档模板，而是一个持续生长的个人知识库。它会慢慢沉淀我对技术、学习方法和问题解决过程的理解。
 
-Set up your AI coding tool to work with Mintlify:
+### 站点内容
+
+- `Guides`: 通用内容、站点说明和写作相关页面
+- `LeetCode`: 算法路线图、题目整理和学习路径
+- `DeepLearning`: 深度学习笔记、接口示例和相关实验内容
+
+### 本地开发
+
+安装 Mintlify CLI：
 
 ```bash
-npx skills add https://mintlify.com/docs
-```
-
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
-
-See the [AI tools guides](/ai-tools) for tool-specific setup.
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
-
-```
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+在项目根目录启动本地预览：
 
-```
+```bash
 mint dev
 ```
 
-View your local preview at `http://localhost:3000`.
+检查站内坏链：
 
-## Publishing changes
+```bash
+mint broken-links
+```
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+### 仓库说明
 
-## Need help?
+- 站点主配置文件是 `docs.json`
+- LeetCode 内容位于 `LeetCode/`
+- DeepLearning 内容位于 `DeepLearning/`
+- 一些通用示例页面位于 `essentials/`
 
-### Troubleshooting
+## In English
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+VectorPeak is my personal blog and knowledge site.
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+This repo mainly covers three areas:
+
+- Personal notes, essays, and ongoing reflections
+- LeetCode algorithms, solutions, and roadmap content
+- DeepLearning notes, experiments, and practical learning records
+
+I want this repository to become a growing personal knowledge base rather than a generic documentation starter. It is meant to accumulate how I think about technology, learning, and problem solving over time.
+
+### Site structure
+
+- `Guides`: general content, site notes, and writing-related pages
+- `LeetCode`: algorithm roadmap, problem notes, and learning paths
+- `DeepLearning`: deep learning notes, example endpoints, and experiments
+
+### Local development
+
+Install the Mintlify CLI:
+
+```bash
+npm i -g mint
+```
+
+Run the local preview from the project root:
+
+```bash
+mint dev
+```
+
+Check for broken links:
+
+```bash
+mint broken-links
+```
