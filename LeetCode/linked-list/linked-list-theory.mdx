@@ -49,67 +49,9 @@ class ListNode:
 
 ## 单链表结构示意
 
-```mermaid
-%%{init: {
-  "theme": "base",
-  "themeVariables": {
-    "background": "#0b0b0c",
-    "primaryColor": "#ffffff",
-    "primaryTextColor": "#111111",
-    "primaryBorderColor": "#111111",
-    "lineColor": "#9ca3af",
-    "fontFamily": "ui-sans-serif, system-ui, sans-serif"
-  },
-  "flowchart": {
-    "curve": "linear",
-    "nodeSpacing": 22,
-    "rankSpacing": 24,
-    "padding": 8
-  }
-}}%%
-flowchart LR
-    H["head"]
+![单链表结构示意](/images/leetcode/singly-linked-list-structure.svg)
 
-    subgraph BOX_A[" "]
-        direction LR
-        A_TXT["A"] --- A_PTR((" "))
-    end
-
-    subgraph BOX_C[" "]
-        direction LR
-        C_TXT["C"] --- C_PTR((" "))
-    end
-
-    subgraph BOX_D[" "]
-        direction LR
-        D_TXT["D"] --- D_PTR((" "))
-    end
-
-    subgraph BOX_E[" "]
-        direction LR
-        E_TXT["E"] --- E_PTR((" "))
-    end
-
-    H --> A_TXT
-    A_PTR --> C_TXT
-    C_PTR --> D_TXT
-    D_PTR --> E_TXT
-    E_PTR --> N["null"]
-
-    classDef head fill:transparent,color:#d1d5db,stroke-width:0;
-    classDef box fill:#ffffff,color:#111111,stroke:#111111,stroke-width:2px;
-    classDef txt fill:transparent,color:#111111,stroke-width:0;
-    classDef ptr fill:#6b7d8a,stroke:#6b7d8a,stroke-width:1px,color:#6b7d8a;
-    classDef tail fill:transparent,color:#ef4444,stroke-width:0;
-
-    class H head;
-    class BOX_A,BOX_C,BOX_D,BOX_E box;
-    class A_TXT,C_TXT,D_TXT,E_TXT txt;
-    class A_PTR,C_PTR,D_PTR,E_PTR ptr;
-    class N tail;
-```
-
-这张图里，`head` 是链表入口，`null` 表示链表结尾。每个白色矩形可以理解成一个节点，其中左边是数据域，右边的小圆点表示 `next` 指针位置。
+这张图里，`head` 是链表入口，`null` 表示链表结尾。每个节点左侧是数据域，右侧的小圆点表示 `next` 指针。
 
 ## 常见操作
 
