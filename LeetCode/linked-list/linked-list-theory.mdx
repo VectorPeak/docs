@@ -52,45 +52,62 @@ class ListNode:
   "theme": "base",
   "themeVariables": {
     "background": "#0b0b0c",
-    "primaryColor": "#232323",
-    "primaryTextColor": "#f3f4f6",
-    "primaryBorderColor": "#a3a3a3",
-    "lineColor": "#d4d4d4",
+    "primaryColor": "#ffffff",
+    "primaryTextColor": "#111111",
+    "primaryBorderColor": "#111111",
+    "lineColor": "#9ca3af",
     "fontFamily": "ui-sans-serif, system-ui, sans-serif"
   },
   "flowchart": {
     "curve": "linear",
-    "nodeSpacing": 18,
-    "rankSpacing": 20,
+    "nodeSpacing": 22,
+    "rankSpacing": 24,
     "padding": 8
   }
 }}%%
 flowchart LR
     H["head"]
 
-    A1["A"] --- A2["next"]
-    C1["C"] --- C2["next"]
-    D1["D"] --- D2["next"]
-    E1["E"] --- E2["next"]
+    subgraph BOX_A[" "]
+        direction LR
+        A_TXT["A"] --- A_PTR((" "))
+    end
 
-    H --> A1
-    A2 --> C1
-    C2 --> D1
-    D2 --> E1
-    E2 --> N["null"]
+    subgraph BOX_C[" "]
+        direction LR
+        C_TXT["C"] --- C_PTR((" "))
+    end
 
-    classDef head fill:#232323,color:#f3f4f6,stroke:#94a3b8,stroke-width:1.5px;
-    classDef data fill:#232323,color:#f3f4f6,stroke:#d4d4d4,stroke-width:1.5px;
-    classDef ptr fill:#232323,color:#cbd5e1,stroke:#d4d4d4,stroke-width:1.5px;
-    classDef tail fill:#232323,color:#fca5a5,stroke:#d4d4d4,stroke-width:1.5px;
+    subgraph BOX_D[" "]
+        direction LR
+        D_TXT["D"] --- D_PTR((" "))
+    end
+
+    subgraph BOX_E[" "]
+        direction LR
+        E_TXT["E"] --- E_PTR((" "))
+    end
+
+    H --> A_TXT
+    A_PTR --> C_TXT
+    C_PTR --> D_TXT
+    D_PTR --> E_TXT
+    E_PTR --> N["null"]
+
+    classDef head fill:transparent,color:#d1d5db,stroke-width:0;
+    classDef box fill:#ffffff,color:#111111,stroke:#111111,stroke-width:2px;
+    classDef txt fill:transparent,color:#111111,stroke-width:0;
+    classDef ptr fill:#6b7d8a,stroke:#6b7d8a,stroke-width:1px,color:#6b7d8a;
+    classDef tail fill:transparent,color:#ef4444,stroke-width:0;
 
     class H head;
-    class A1,C1,D1,E1 data;
-    class A2,C2,D2,E2 ptr;
+    class BOX_A,BOX_C,BOX_D,BOX_E box;
+    class A_TXT,C_TXT,D_TXT,E_TXT txt;
+    class A_PTR,C_PTR,D_PTR,E_PTR ptr;
     class N tail;
 ```
 
-这张图里，`head` 是链表入口，`null` 表示链表结尾。每个节点被拆成两部分来看：左边是数据域，右边是指针域 `next`。
+这张图里，`head` 是链表入口，`null` 表示链表结尾。每个白色矩形可以理解成一个节点，其中左边是数据域，右边的小圆点表示 `next` 指针位置。
 
 ## 常见操作
 
