@@ -34,7 +34,6 @@
               "essentials/markdown",
               "essentials/code",
               "essentials/images",
-              "essentials/mindmap",
               "essentials/reusable-snippets"
             ]
           },
@@ -74,7 +73,7 @@
           {
             "group": "路线图",
             "pages": [
-              "essentials/mindmap"
+              "Algorithms4Leetcode/mindmap"
             ]
           }
         ]
@@ -114,15 +113,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
