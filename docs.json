@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/vectorpeak_no_background.png",
+  "favicon": "/images/logo/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -143,8 +143,8 @@
     }
   },
   "logo": {
-    "light": "/logo/vector_peak_light.png",
-    "dark": "/logo/vector_peak_dark.webp"
+    "light": "/images/logo/vector_peak_light.png",
+    "dark": "/images/logo/vector_peak_dark.webp"
   },
   "navbar": {
     "links": [
