@@ -17,6 +17,8 @@
 {/* Add product-specific terms and preferred usage */}
 {/* Example: Use "workspace" not "project", "member" not "user" */}
 
+- `temp` means the local branch `temporary_storage`
+
 ## Style preferences
 
 {/* Add any project-specific style rules below */}
