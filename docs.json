@@ -67,6 +67,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "数据结构与算法",
+        "groups": [
+          {
+            "group": "路线图",
+            "pages": [
+              "essentials/mindmap"
+            ]
+          }
+        ]
       }
     ],
     "global": {
